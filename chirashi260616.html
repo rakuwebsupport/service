@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ラクWebサポート チラシ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #d6dce8;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 60px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.flyer {
+  width: 680px;
+  background: #fff;
+  border: 1px solid #bcc5d6;
+  overflow: hidden;
+}
+
+/* ── HEADER ── */
+.hdr {
+  background: #1a1a2e;
+  padding: 28px 32px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.hdr::before {
+  content: '';
+  position: absolute;
+  right: -60px; top: -60px;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: rgba(255,80,80,0.08);
+}
+.hdr-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  color: #ff6b6b;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.hdr h1 {
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.35;
+  position: relative;
+}
+.hdr h1 .accent {
+  color: #ff6b6b;
+}
+.hdr h1 .accent2 {
+  color: #7ec8ff;
+}
+.hdr-sub {
+  margin-top: 10px;
+  font-size: 11.5px;
+  color: rgba(255,255,255,.55);
+  position: relative;
+}
+
+/* ── CRISIS SECTION ── */
+.crisis {
+  background: #fff8f7;
+  border-top: 4px solid #ff4444;
+  padding: 22px 32px 18px;
+}
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: #ff4444;
+  margin-bottom: 12px;
+}
+.section-label::before {
+  content: '';
+  display: block;
+  width: 14px; height: 2px;
+  background: #ff4444;
+}
+.crisis-title {
+  font-size: 17px;
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.crisis-title span {
+  color: #ff4444;
+}
+.crisis-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.crisis-item {
+  background: #fff;
+  border: 1.5px solid #ffcdd2;
+  border-radius: 10px;
+  padding: 12px 6px 10px;
+  text-align: center;
+}
+.crisis-icon {
+  font-size: 26px;
+  margin-bottom: 6px;
+  display: block;
+  line-height: 1;
+}
+.crisis-item .c-label {
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #c62828;
+  display: block;
+  line-height: 1.4;
+}
+.crisis-item .c-up {
+  display: inline-block;
+  background: #ff4444;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 900;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+.crisis-note {
+  background: #fff3f3;
+  border-left: 3px solid #ff4444;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #b71c1c;
+  line-height: 1.5;
+}
+
+/* ── DIVIDER ARROW ── */
+.divider-arrow {
+  background: #fff8f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 0 0;
+}
+.divider-arrow .arrow-body {
+  width: 0; height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 22px solid #ff4444;
+}
+.divider-arrow .arrow-txt {
+  font-size: 9px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: -18px;
+  letter-spacing: .05em;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── SOLUTION ── */
+.solution {
+  background: #f0f7ff;
+  border-top: 4px solid #1565c0;
+  padding: 22px 32px 20px;
+}
+.solution .section-label {
+  color: #1565c0;
+}
+.solution .section-label::before {
+  background: #1565c0;
+}
+.sol-title {
+  font-size: 17px;
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.sol-title span {
+  color: #1565c0;
+}
+.sol-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.sol-step {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border: 1.5px solid #bbdefb;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+.sol-step-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+  line-height: 1;
+  width: 36px;
+  text-align: center;
+}
+.sol-step-body .s-ttl {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1565c0;
+  margin-bottom: 3px;
+}
+.sol-step-body .s-desc {
+  font-size: 11px;
+  color: #555;
+  line-height: 1.5;
+}
+.result-banner {
+  background: #1565c0;
+  border-radius: 10px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.result-banner .r-num {
+  font-size: 36px;
+  font-weight: 900;
+  color: #7ec8ff;
+  line-height: 1;
+}
+.result-banner .r-txt {
+  font-size: 11px;
+  color: #fff;
+  line-height: 1.5;
+}
+.result-banner .r-txt b {
+  display: block;
+  font-size: 14px;
+  color: #7ec8ff;
+  margin-bottom: 2px;
+}
+
+/* ── SERVICES ROW ── */
+.services {
+  padding: 20px 32px;
+  border-top: 1px solid #e0e8f5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.svc-card {
+  border: 2px solid #1565c0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: #fff;
+}
+.svc-card.highlight {
+  background: #e8f0fe;
+  border-color: #0b3d91;
+}
+.svc-card-num {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: #1565c0;
+  margin-bottom: 6px;
+}
+.svc-card.highlight .svc-card-num { color: #0b3d91; }
+.svc-card-ttl {
+  font-size: 14px;
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.svc-card-desc {
+  font-size: 10.5px;
+  color: #555;
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+.svc-price {
+  background: #1565c0;
+  color: #fff;
+  border-radius: 7px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.svc-card.highlight .svc-price {
+  background: #0b3d91;
+}
+.svc-price .price-main {
+  font-size: 15px;
+  font-weight: 900;
+  color: #7ec8ff;
+}
+.svc-price .price-note {
+  font-size: 9px;
+  color: rgba(255,255,255,.75);
+  text-align: right;
+  line-height: 1.5;
+}
+.campaign-badge {
+  display: inline-block;
+  background: #ff6b6b;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  letter-spacing: .05em;
+}
+
+/* ── SNS ROW ── */
+.sns-row {
+  background: #f5f7fa;
+  border-top: 1px solid #e0e8f5;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sns-label {
+  background: #1a1a2e;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  letter-spacing: .08em;
+}
+.sns-items {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.sns-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10.5px;
+  color: #333;
+  font-weight: 500;
+}
+.sns-item .emoji { font-size: 14px; }
+
+/* ── FOOTER ── */
+.ftr {
+  background: #1a1a2e;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.ftr-left .ftr-name {
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 3px;
+}
+.ftr-left .ftr-sub {
+  font-size: 9.5px;
+  color: rgba(255,255,255,.5);
+  line-height: 1.6;
+}
+.ftr-cta {
+  text-align: right;
+}
+.free-badge {
+  display: inline-block;
+  background: #ff6b6b;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  letter-spacing: .05em;
+}
+.tel-block {
+  background: #2f7fff;
+  border-radius: 20px;
+  padding: 8px 18px;
+  text-align: center;
+}
+.tel-block .tel {
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: .05em;
+}
+.tel-block .tel-sub {
+  font-size: 9px;
+  color: rgba(255,255,255,.75);
+  margin-top: 2px;
+}
+</style>
+</head>
+<body>
+<div class="flyer">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div class="hdr-eyebrow">町工場・中小企業の「困った」をまるごと解決</div>
+    <h1><span class="accent">コストが上がり続ける時代、</span><br>デジタル化で<span class="accent2">経費を削減</span>しませんか？</h1>
+    <div class="hdr-sub">大手ITより安く・丁寧に。現場ヒアリングから始める地域密着サポート</div>
+  </div>
+
+  <!-- CRISIS -->
+  <div class="crisis">
+    <div class="section-label">今、こんな状況ではありませんか？</div>
+    <div class="crisis-title"><span>あらゆるコストが上昇中。</span><br>でも、簡単には値上げできない…</div>
+    <div class="crisis-grid">
+      <div class="crisis-item">
+        <span class="crisis-icon">🥩</span>
+        <span class="c-label">原材料費</span>
+        <span class="c-up">UP ↑</span>
+      </div>
+      <div class="crisis-item">
+        <span class="crisis-icon">👷</span>
+        <span class="c-label">人件費<br>（最低賃金）</span>
+        <span class="c-up">UP ↑</span>
+      </div>
+      <div class="crisis-item">
+        <span class="crisis-icon">🙍</span>
+        <span class="c-label">人手不足<br>採用難に</span>
+        <span class="c-up">深刻 ↑</span>
+      </div>
+      <div class="crisis-item">
+        <span class="crisis-icon">⛽</span>
+        <span class="c-label">ガソリン代<br>（交通費）</span>
+        <span class="c-up">UP ↑</span>
+      </div>
+      <div class="crisis-item">
+        <span class="crisis-icon">💡</span>
+        <span class="c-label">水道・電気<br>などの公共料金</span>
+        <span class="c-up">UP ↑</span>
+      </div>
+    </div>
+    <div class="crisis-note">
+      これらはすべて「外部要因」。自社だけではコントロールが難しい現実です。<br>
+      だからこそ、<strong>社内のムダ・非効率を見直す</strong>ことが今すぐできる対策です。
+    </div>
+  </div>
+
+  <!-- ARROW -->
+  <div class="divider-arrow">
+    <div class="arrow-body"></div>
+  </div>
+
+  <!-- SOLUTION -->
+  <div class="solution">
+    <div class="section-label">解決策</div>
+    <div class="sol-title"><span>デジタル化で社内のムダを削減。</span><br>大きな費用は不要です。</div>
+    <div class="sol-steps">
+      <div class="sol-step">
+        <div class="sol-step-icon">📄</div>
+        <div class="sol-step-body">
+          <div class="s-ttl">紙ベース管理・転記作業をなくす</div>
+          <div class="s-desc">見積書・日報・在庫管理をデジタル化 → 転記ミスゼロ、探す手間ゼロ</div>
+        </div>
+      </div>
+      <div class="sol-step">
+        <div class="sol-step-icon">📊</div>
+        <div class="sol-step-body">
+          <div class="s-ttl">表計算・Googleサービスを最大活用</div>
+          <div class="s-desc">Excel・スプレッドシート・Google フォームなど低コストツールで業務を自動化</div>
+        </div>
+      </div>
+    </div>
+    <div class="result-banner">
+      <div class="r-num">30%</div>
+      <div class="r-txt">
+        <b>事務作業時間を平均30％削減</b>
+        現場に合わせて段階的に導入。ITが苦手なスタッフでも安心です。
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="services">
+    <div class="svc-card highlight">
+      <div class="campaign-badge">🎉 創業キャンペーン中</div>
+      <div class="svc-card-num">SERVICE 01</div>
+      <div class="svc-card-ttl">ホームページで<br>人材・顧客を獲得</div>
+      <div class="svc-card-desc">
+        ありきたりでないオリジナルHP。スマホ対応・SEO対策込み。採用・新規顧客獲得に向けた第一歩に。
+      </div>
+      <div class="svc-price">
+        <div>
+          <div class="price-main">月額1万円</div>
+          <div style="font-size:9px;color:rgba(255,255,255,.6);">（10ヶ月 = 計10万円）</div>
+        </div>
+        <div class="price-note">通常30万円<br>分割手数料ゼロ</div>
+      </div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-card-num">SERVICE 02</div>
+      <div class="svc-card-ttl">業務デジタル化<br>サポート</div>
+      <div class="svc-card-desc">
+        現場ヒアリングから設計。既存のIT資産を活かし、低コストで業務効率をUP。
+      </div>
+      <div class="svc-price">
+        <div>
+          <div class="price-main">20〜50万円</div>
+          <div style="font-size:9px;color:rgba(255,255,255,.6);">月額2〜5万円 分割OK</div>
+        </div>
+        <div class="price-note">保守サポート<br>月5,000円〜</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SNS ROW -->
+  <div class="sns-row">
+    <div class="sns-label">SERVICE 03</div>
+    <div class="sns-items">
+      <div class="sns-item"><span class="emoji">📸</span>Instagram / X 運用</div>
+      <div class="sns-item"><span class="emoji">🎬</span>会社紹介・技術動画編集</div>
+      <div class="sns-item"><span class="emoji">▶️</span>YouTube 活用</div>
+    </div>
+    <div style="font-size:9.5px;color:#777;flex-shrink:0;">10代〜20代のトレンドで発信</div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="ftr">
+    <div class="ftr-left">
+      <div class="ftr-name">ラクWebサポート</div>
+      <div class="ftr-sub">業務デジタル化 ／ HP制作 ／ SNS・動画<br>URL: https://rakuwebsupport.github.io/service/</div>
+    </div>
+    <div class="ftr-cta">
+      <div class="free-badge">まずは無料相談</div>
+      <div class="tel-block">
+        <div class="tel">📞 070-4372-3784（宮前）</div>
+        <div class="tel-sub">raku.web.support@gmail.com</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
