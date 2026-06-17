@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 595 842" width="595" height="842"
+     font-family="'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif">
+
+  <!-- BACKGROUND -->
+  <rect width="595" height="842" fill="#f0f2f7"/>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- HEADER -->
+  <!-- ══════════════════════════════════════ -->
+  <rect x="0" y="0" width="595" height="118" fill="#1a1a2e"/>
+  <circle cx="530" cy="-20" r="130" fill="#ff444413"/>
+  <circle cx="555" cy="65"  r="72"  fill="#2f7fff0d"/>
+
+  <text x="26" y="22" font-size="10.5" font-weight="700" fill="#ff6b6b" letter-spacing="2">町工場・中小企業の「困った」をまるごと解決</text>
+
+  <text x="26" y="54"  font-size="24" font-weight="900" fill="#ff6b6b">コストが上がり続ける時代、</text>
+  <text x="26" y="84"  font-size="24" font-weight="900" fill="#ffffff">デジタル化で</text>
+  <text x="196" y="84" font-size="24" font-weight="900" fill="#7ec8ff">経費を削減</text>
+  <text x="316" y="84" font-size="24" font-weight="900" fill="#ffffff">しませんか？</text>
+  <text x="26" y="110" font-size="11" fill="#ffffff88">大手ITより安く・丁寧に。現場ヒアリングから始める地域密着サポート</text>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- CRISIS SECTION  y=118～375 -->
+  <!-- ══════════════════════════════════════ -->
+  <rect x="0" y="118" width="595" height="257" fill="#fff8f7"/>
+  <rect x="0" y="118" width="595" height="4"   fill="#ff4444"/>
+
+  <!-- label -->
+  <rect x="26" y="134" width="3" height="13" fill="#ff4444"/>
+  <text x="34" y="145" font-size="11.5" font-weight="700" fill="#ff4444" letter-spacing="1">今、こんな状況ではありませんか？</text>
+
+  <!-- title -->
+  <text x="26" y="172" font-size="18" font-weight="900" fill="#ff4444">あらゆるコストが上昇中。</text>
+  <text x="26" y="194" font-size="18" font-weight="900" fill="#1a1a2e">でも、簡単には値上げできない…</text>
+
+  <!-- 5 crisis cards  y=202, h=88 -->
+  <!-- card W=99, gap=8, start x=26 -->
+
+  <!-- 原材料費 -->
+  <rect x="26"  y="202" width="99" height="88" rx="8" fill="#fff" stroke="#ffcdd2" stroke-width="1.5"/>
+  <text x="75"  y="234" font-size="27" text-anchor="middle">🥩</text>
+  <text x="75"  y="252" font-size="11" font-weight="700" fill="#c62828" text-anchor="middle">原材料費</text>
+  <rect x="50"  y="258" width="50" height="18" rx="4" fill="#ff4444"/>
+  <text x="75"  y="271" font-size="11" font-weight="900" fill="#fff" text-anchor="middle">UP ↑</text>
+
+  <!-- 人件費 -->
+  <rect x="133" y="202" width="99" height="88" rx="8" fill="#fff" stroke="#ffcdd2" stroke-width="1.5"/>
+  <text x="182" y="234" font-size="27" text-anchor="middle">👷</text>
+  <text x="182" y="250" font-size="11" font-weight="700" fill="#c62828" text-anchor="middle">人件費</text>
+  <text x="182" y="263" font-size="10"  font-weight="700" fill="#c62828" text-anchor="middle">（最低賃金）</text>
+  <rect x="157" y="270" width="50" height="18" rx="4" fill="#ff4444"/>
+  <text x="182" y="283" font-size="11" font-weight="900" fill="#fff" text-anchor="middle">UP ↑</text>
+
+  <!-- 人手不足 -->
+  <rect x="240" y="202" width="99" height="88" rx="8" fill="#fff" stroke="#ffcdd2" stroke-width="1.5"/>
+  <text x="289" y="234" font-size="27" text-anchor="middle">🙍</text>
+  <text x="289" y="250" font-size="11" font-weight="700" fill="#c62828" text-anchor="middle">人手不足</text>
+  <text x="289" y="263" font-size="10"  font-weight="700" fill="#c62828" text-anchor="middle">採用難に</text>
+  <rect x="261" y="270" width="56" height="18" rx="4" fill="#ff4444"/>
+  <text x="289" y="283" font-size="11" font-weight="900" fill="#fff" text-anchor="middle">深刻 ↑</text>
+
+  <!-- ガソリン代 -->
+  <rect x="347" y="202" width="99" height="88" rx="8" fill="#fff" stroke="#ffcdd2" stroke-width="1.5"/>
+  <text x="396" y="234" font-size="27" text-anchor="middle">⛽</text>
+  <text x="396" y="250" font-size="11" font-weight="700" fill="#c62828" text-anchor="middle">ガソリン代</text>
+  <text x="396" y="263" font-size="10"  font-weight="700" fill="#c62828" text-anchor="middle">（交通費）</text>
+  <rect x="371" y="270" width="50" height="18" rx="4" fill="#ff4444"/>
+  <text x="396" y="283" font-size="11" font-weight="900" fill="#fff" text-anchor="middle">UP ↑</text>
+
+  <!-- 公共料金 -->
+  <rect x="454" y="202" width="115" height="88" rx="8" fill="#fff" stroke="#ffcdd2" stroke-width="1.5"/>
+  <text x="511" y="234" font-size="27" text-anchor="middle">💡</text>
+  <text x="511" y="250" font-size="11" font-weight="700" fill="#c62828" text-anchor="middle">水道・電気など</text>
+  <text x="511" y="263" font-size="10"  font-weight="700" fill="#c62828" text-anchor="middle">公共料金</text>
+  <rect x="486" y="270" width="50" height="18" rx="4" fill="#ff4444"/>
+  <text x="511" y="283" font-size="11" font-weight="900" fill="#fff" text-anchor="middle">UP ↑</text>
+
+  <!-- crisis note -->
+  <rect x="26" y="298" width="543" height="46" fill="#fff3f3"/>
+  <rect x="26" y="298" width="4"   height="46" fill="#ff4444"/>
+  <text x="38" y="318" font-size="12" font-weight="700" fill="#b71c1c">これらはすべて「外部要因」。自社だけではコントロールが難しい現実です。</text>
+  <text x="38" y="336" font-size="12" font-weight="700" fill="#b71c1c">だからこそ、社内のムダ・非効率を見直すことが今すぐできる対策です。</text>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- ARROW DIVIDER  y=375 -->
+  <!-- ══════════════════════════════════════ -->
+  <rect x="0" y="375" width="595" height="26" fill="#fff8f7"/>
+  <polygon points="297,398 255,375 339,375" fill="#ff4444"/>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- SOLUTION  y=401～580 -->
+  <!-- ══════════════════════════════════════ -->
+  <rect x="0" y="401" width="595" height="179" fill="#f0f7ff"/>
+  <rect x="0" y="401" width="595" height="4"   fill="#1565c0"/>
+
+  <!-- label -->
+  <rect x="26" y="414" width="3" height="13" fill="#1565c0"/>
+  <text x="34" y="425" font-size="11.5" font-weight="700" fill="#1565c0" letter-spacing="1">解決策</text>
+
+  <!-- sol title -->
+  <text x="26" y="450" font-size="18" font-weight="900" fill="#1565c0">デジタル化で社内のムダを削減。</text>
+  <text x="26" y="470" font-size="18" font-weight="900" fill="#1a1a2e">大きな費用は不要です。</text>
+
+  <!-- step 1 -->
+  <rect x="26" y="480" width="258" height="56" rx="8" fill="#fff" stroke="#bbdefb" stroke-width="1.5"/>
+  <text x="48"  y="504" font-size="22">📄</text>
+  <text x="80"  y="499" font-size="13" font-weight="700" fill="#1565c0">紙ベース管理・転記作業をなくす</text>
+  <text x="80"  y="514" font-size="11" fill="#555">見積書・日報・在庫管理をデジタル化</text>
+  <text x="80"  y="527" font-size="11" fill="#555">→ 転記ミスゼロ、探す手間ゼロ</text>
+
+  <!-- step 2 -->
+  <rect x="294" y="480" width="275" height="56" rx="8" fill="#fff" stroke="#bbdefb" stroke-width="1.5"/>
+  <text x="314" y="504" font-size="22">📊</text>
+  <text x="346" y="499" font-size="13" font-weight="700" fill="#1565c0">表計算ソフト・Googleサービスを最大活用</text>
+  <text x="346" y="514" font-size="11" fill="#555">Excel・スプレッドシート・Googleフォームなど</text>
+  <text x="346" y="527" font-size="11" fill="#555">低コストツールで業務を自動化</text>
+
+  <!-- result banner -->
+  <rect x="26" y="546" width="543" height="46" rx="8" fill="#1565c0"/>
+  <text x="82"  y="563" font-size="34" font-weight="900" fill="#7ec8ff" text-anchor="middle">30%</text>
+  <text x="140" y="560" font-size="15" font-weight="700" fill="#7ec8ff">事務作業時間を平均30％削減</text>
+  <text x="140" y="578" font-size="11.5" fill="#ffffffcc">現場に合わせて段階的に導入。ITが苦手なスタッフでも安心です。</text>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- SERVICES  y=596～746 -->
+  <!-- ══════════════════════════════════════ -->
+  <rect x="0" y="592" width="595" height="4" fill="#e0e8f5"/>
+
+  <!-- SVC01 -->
+  <rect x="14"  y="602" width="278" height="152" rx="10" fill="#e8f0fe" stroke="#0b3d91" stroke-width="2"/>
+
+  <rect x="24"  y="610" width="112" height="17" rx="4" fill="#ff6b6b"/>
+  <text x="80"  y="622.5" font-size="10.5" font-weight="700" fill="#fff" text-anchor="middle">🎉 創業キャンペーン中</text>
+
+  <text x="24"  y="643" font-size="10.5" font-weight="700" fill="#0b3d91" letter-spacing="1">SERVICE 01</text>
+  <text x="24"  y="661" font-size="15"   font-weight="900" fill="#1a1a2e">ホームページで</text>
+  <text x="24"  y="678" font-size="15"   font-weight="900" fill="#1a1a2e">人材・顧客を獲得</text>
+  <text x="24"  y="694" font-size="10.5" fill="#555">オリジナルHP。スマホ対応・SEO対策込み。</text>
+  <text x="24"  y="707" font-size="10.5" fill="#555">採用・新規顧客獲得に向けた第一歩に。</text>
+
+  <!-- price box svc01 -->
+  <rect x="24"  y="716" width="258" height="32" rx="6" fill="#0b3d91"/>
+  <text x="36"  y="729" font-size="17"  font-weight="900" fill="#7ec8ff">10万円</text>
+  <text x="36"  y="742" font-size="9.5" fill="#ffffff88">月額1万 × 10ヶ月</text>
+  <text x="272" y="727" font-size="9.5" fill="#ffffffcc" text-anchor="end">通常30万円／手数料ゼロ</text>
+  <text x="272" y="741" font-size="9.5" fill="#ffffffcc" text-anchor="end">＋記事更新・保守 月3,000円</text>
+
+  <!-- SVC02 -->
+  <rect x="303" y="602" width="278" height="152" rx="10" fill="#fff" stroke="#1565c0" stroke-width="2"/>
+
+  <text x="315" y="625" font-size="10.5" font-weight="700" fill="#1565c0" letter-spacing="1">SERVICE 02</text>
+  <text x="315" y="645" font-size="15"   font-weight="900" fill="#1a1a2e">業務デジタル化</text>
+  <text x="315" y="662" font-size="15"   font-weight="900" fill="#1a1a2e">サポート</text>
+  <text x="315" y="679" font-size="10.5" fill="#555">現場ヒアリングから設計。既存のIT資産を</text>
+  <text x="315" y="692" font-size="10.5" fill="#555">活かし、低コストで業務効率をUP。</text>
+
+  <!-- price box svc02 -->
+  <rect x="315" y="716" width="256" height="32" rx="6" fill="#1565c0"/>
+  <text x="327" y="729" font-size="17"  font-weight="900" fill="#7ec8ff">月額 3万円〜</text>
+  <text x="327" y="742" font-size="9.5" fill="#ffffff88">サービス内容による</text>
+  <text x="561" y="727" font-size="9.5" fill="#ffffffcc" text-anchor="end">保守込み</text>
+  <text x="561" y="741" font-size="9.5" fill="#ffffffcc" text-anchor="end">手数料ゼロ</text>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- SNS ROW  y=758 -->
+  <!-- ══════════════════════════════════════ -->
+  <rect x="0" y="758" width="595" height="36" fill="#f5f7fa" stroke="#e0e8f5" stroke-width="0.5"/>
+  <rect x="14" y="765" width="76" height="20" rx="4" fill="#1a1a2e"/>
+  <text x="52"  y="779" font-size="10.5" font-weight="700" fill="#fff" text-anchor="middle">SERVICE 03</text>
+
+  <text x="100" y="779" font-size="13">📸</text>
+  <text x="117" y="779" font-size="12" fill="#333" font-weight="500">Instagram / X 運用</text>
+
+  <text x="255" y="779" font-size="13">🎬</text>
+  <text x="272" y="779" font-size="12" fill="#333" font-weight="500">会社紹介・技術動画編集</text>
+
+  <text x="426" y="779" font-size="13">▶</text>
+  <text x="443" y="779" font-size="12" fill="#333" font-weight="500">YouTube 活用</text>
+
+  <text x="581" y="779" font-size="10" fill="#888" text-anchor="end">10代〜20代のトレンドで発信</text>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- FOOTER  y=794～842 -->
+  <!-- ══════════════════════════════════════ -->
+  <rect x="0" y="794" width="595" height="48" fill="#1a1a2e"/>
+
+  <!-- company -->
+  <text x="20" y="813" font-size="14"   font-weight="900" fill="#fff">ラクWebサポート</text>
+  <text x="20" y="828" font-size="10"   fill="#ffffff70">業務デジタル化 ／ HP制作 ／ SNS・動画　https://rakuwebsupport.github.io/service/</text>
+  <text x="20" y="840" font-size="10"   fill="#ffffff70">raku.web.support@gmail.com</text>
+
+  <!-- LINE QR -->
+  <rect x="276" y="796" width="50" height="44" rx="5" fill="#fff"/>
+  <text x="301" y="808" font-size="8" font-weight="700" fill="#06C755" text-anchor="middle">💬 LINE</text>
+  <image href="https://qr-official.line.me/gs/M_892htado_GW.png?oat_content=qr"
+         x="278" y="810" width="46" height="26" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- CTA -->
+  <!-- free badge -->
+  <rect x="348" y="790" width="84" height="14" rx="7" fill="#ff6b6b"/>
+  <text x="390" y="800.5" font-size="9.5" font-weight="700" fill="#fff" text-anchor="middle">まずは無料相談</text>
+
+  <rect x="336" y="806" width="248" height="34" rx="17" fill="#2f7fff"/>
+  <text x="460" y="820" font-size="14"  font-weight="900" fill="#fff" text-anchor="middle">📞 070-4372-3784（宮前）</text>
+  <text x="460" y="834" font-size="10" fill="#ffffffcc" text-anchor="middle">raku.web.support@gmail.com　お気軽にご連絡ください</text>
+
+</svg>
