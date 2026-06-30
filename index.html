@@ -242,7 +242,7 @@
   #heroCanvas { width: 100%; height: 100%; display: block; }
 
   /* ── セクション共通 ── */
-  section { padding: 100px 48px; }
+  section { padding: 50px 48px; }
   .section-label {
     font-family: var(--mono);
     font-size: 10px;
@@ -749,6 +749,65 @@
     body { cursor: auto; }
     #cursor, #cursor-ring { display: none; }
   }
+
+
+
+/* 2026/7/1 追加セクション（12項目・スマホ縦1列版）*/
+
+.capability-grid,
+.qa-list{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+margin-top:40px;
+}
+
+.capability-card,
+.qa-card{
+background:#fff;
+border:1px solid rgba(24,28,36,.1);
+padding:28px;
+transition:.3s;
+border-radius:16px;
+}
+
+.capability-card:hover,
+.qa-card:hover{
+transform:translateY(-5px);
+border-color:#2555a0;
+}
+
+.capability-card h3,
+.qa-card h3{
+color:#2555a0;
+font-size:17px;
+margin-bottom:12px;
+}
+
+.capability-card p,
+.qa-card p{
+font-size:14px;
+line-height:2;
+opacity:.75;
+}
+
+/* スマホ表示は必ず縦1列 */
+@media(max-width:768px){
+
+.capability-grid,
+.qa-list{
+grid-template-columns:1fr;
+gap:18px;
+}
+
+.capability-card,
+.qa-card{
+padding:22px;
+}
+
+}
+
+
 </style>
 </head>
 <body>
@@ -925,6 +984,58 @@
     </div>
   </div>
 </section>
+
+
+
+<!-- できるとこと・Q＆A -->
+
+<section id="capability">
+
+<h2>ラクWebサポートができること</h2>
+
+<div class="capability-grid">
+
+<div class="capability-card"><h3>1. ホームページ制作・改善</h3><p>会社の特徴や強みを整理し、問い合わせにつながるWebサイトを制作します。</p></div>
+<div class="capability-card"><h3>2. 古いホームページの改善</h3><p>更新されていないサイトやスマホ対応などを見直します。</p></div>
+<div class="capability-card"><h3>3. Google検索・AI検索対策</h3><p>検索されやすい構成や情報整理を行います。</p></div>
+<div class="capability-card"><h3>4. 事務作業の効率化</h3><p>入力・集計・転記など日々の作業改善を支援します。</p></div>
+<div class="capability-card"><h3>5. Googleスプレッドシート活用</h3><p>無料ツールを活用した管理環境づくりを提案します。</p></div>
+<div class="capability-card"><h3>6. Excelマクロによる改善</h3><p>繰り返し作業や集計作業の効率化を支援します。</p></div>
+<div class="capability-card"><h3>7. データ管理改善</h3><p>AccessやBigQueryなどを活用した情報整理を支援します。</p></div>
+<div class="capability-card"><h3>8. 業務フロー改善</h3><p>現在の仕事の流れを整理し改善方法をご提案します。</p></div>
+<div class="capability-card"><h3>9. SNS・動画活用</h3><p>会社の魅力を伝える発信をサポートします。</p></div>
+<div class="capability-card"><h3>10. ECサイト導入支援</h3><p>ネット販売を始めたい企業様を支援します。</p></div>
+<div class="capability-card"><h3>11. 採用向けWeb活用</h3><p>採用につながる情報発信をサポートします。</p></div>
+<div class="capability-card"><h3>12. IT活用相談</h3><p>何から始めるべきか分からない段階から対応します。</p></div>
+
+</div>
+
+</section>
+
+
+<section id="qa">
+
+<h2>よくあるご質問</h2>
+
+<div class="qa-list">
+
+<div class="qa-card"><h3>Q1. 初めてホームページを作りますが相談できますか？</h3><p>A. 可能です。会社の特徴整理からサポートします。</p></div>
+<div class="qa-card"><h3>Q2. 今あるホームページを改善できますか？</h3><p>A. デザイン変更や情報整理など対応できます。</p></div>
+<div class="qa-card"><h3>Q3. ITに詳しい社員がいなくても大丈夫ですか？</h3><p>A. 分かりやすい説明を心がけています。</p></div>
+<div class="qa-card"><h3>Q4. 高額なシステム導入は必要ですか？</h3><p>A. 現在の環境を活用した改善をご提案します。</p></div>
+<div class="qa-card"><h3>Q5. Excel管理でも相談できますか？</h3><p>A. 入力・集計方法を確認し改善します。</p></div>
+<div class="qa-card"><h3>Q6. 小規模な会社でも依頼できますか？</h3><p>A. 会社規模や予算に合わせて対応します。</p></div>
+<div class="qa-card"><h3>Q7. 制作後のサポートはありますか？</h3><p>A. 更新や改善相談も対応可能です。</p></div>
+<div class="qa-card"><h3>Q8. 見積もりだけでも相談できますか？</h3><p>A. 初回相談・お見積りは無料です。</p></div>
+<div class="qa-card"><h3>Q9. どんな業種でも対応できますか？</h3><p>A. 中小企業様を中心に対応しています。</p></div>
+<div class="qa-card"><h3>Q10. 事務作業の相談だけでも可能ですか？</h3><p>A. 業務改善のみのご相談も可能です。</p></div>
+<div class="qa-card"><h3>Q11. LINEやSNS運用も相談できますか？</h3><p>A. Web活用全般をサポートしています。</p></div>
+<div class="qa-card"><h3>Q12. まず話を聞いてもらうだけでも大丈夫ですか？</h3><p>A. 現状のお悩み整理から対応します。</p></div>
+
+</div>
+
+</section>
+
 
 <!-- 代表 -->
 <section id="about">
